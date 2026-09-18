@@ -74,7 +74,6 @@ The significant difference between network carriers and low-cost carriers demons
 - EV / Revenue and EV / EBITDA trading multiples
 - Peer median and quartile analysis
 - Implied share-price valuation
-- Network vs. low-cost carrier sensitivity analysis
 - Football-field valuation visualization
 - Reproducible Python workflow
 - Business-model-based peer-group sensitivity analysis
@@ -91,12 +90,9 @@ lufthansa-trading-comps/
 ├── notebooks/
 │   └── lufthansa_comps_analysis.ipynb
 │
-├── outputs/
-│   ├── football_field.png
-│   └── peer_group_valuation.png
-│
-└── data/
-    └── README.md
+└── outputs/
+    ├── football_field.png
+    └── peer_group_valuation.png
 ```
 
 ## Data Sources
@@ -110,6 +106,7 @@ The analysis covers:
 - easyJet
 - Ryanair
 - Wizz Air
+
 Financial periods differ across companies due to different fiscal year-ends. LTM figures are therefore constructed using the latest publicly available financial information available as of the valuation date.
 
 ## Limitations
@@ -123,6 +120,7 @@ Key limitations include differences in:
 - Net debt definitions
 - Lease and pension treatment
 - Capital structures
+
 The analysis therefore uses EV / EBITDA as the primary valuation reference and evaluates the impact of different peer-group definitions.
 
 ## Technologies
