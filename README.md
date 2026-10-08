@@ -1,137 +1,58 @@
 # Lufthansa Trading Comparables Valuation
 
-A Python-based comparable companies analysis of Deutsche Lufthansa AG using a selected peer group of European network and low-cost carriers.
+**Valuation date: 9 September 2026 | Educational valuation case study**
 
-The project applies a trading comparables methodology to derive an implied equity valuation for Lufthansa based on LTM financials, enterprise value and peer trading multiples.
+This project values Lufthansa using European airline trading multiples, with auditable financial bridges, issuer source references and a frozen market-data snapshot. It illustrates valuation work relevant to M&A; it does not model a transaction or claim prior deal experience.
 
-## Project Overview
+## Main finding
 
-**Target:** Deutsche Lufthansa AG  
-**Valuation Date:** 9 September 2026  
-**Primary Valuation Method:** EV / LTM EBITDA
+Peer choice matters more than the appearance of numerical precision. The network-carrier EBITDA reference midpoint is EUR 3.77 per share, compared with EUR 6.21 for all five peers and EUR 12.73 for the low-cost set. The observed Lufthansa close is EUR 7.71. These are outputs of a **reported-net-debt baseline**, not fully adjusted target prices. Network carriers are the primary business-model reference; only two core peers are available.
 
-### Peer Group
+| group | n | low | median | high | range_basis |
+| --- | --- | --- | --- | --- | --- |
+| Network carriers | 2 | 1.78 | 3.77 | 5.75 | Observed min-max |
+| All peers | 5 | 5.75 | 6.21 | 12.73 | Peer 25th-75th percentile |
+| Low-cost carriers | 3 | 9.47 | 12.73 | 13.59 | Peer 25th-75th percentile |
 
-- Air France-KLM
-- International Airlines Group (IAG)
-- easyJet
-- Ryanair
-- Wizz Air
+The two-company range is the observed min-max. Larger groups use peer 25th-75th percentiles, which are not confidence intervals. EV/Revenue is secondary because margins and business mixes differ materially.
 
-The peer group is further classified into **Network Carriers** and **Low-Cost Carriers** to analyze the impact of business-model selection on Lufthansa's implied valuation.
+![Valuation ranges](outputs/football_field.png)
 
-## Key Valuation Results
+## Read first
 
-| Valuation Basis | Implied Share Price |
-|---|---:|
-| Network Carriers | €4.18 |
-| All Peers | €6.55 |
-| Low-Cost Carriers | €12.83 |
+- [Three-page valuation brief](outputs/Lufthansa_Valuation_Brief.pdf)
+- [Methodology and limitations](docs/METHODOLOGY.md)
+- [German interview guide](docs/INTERVIEW_GUIDE_DE.md)
+- [Notebook](notebooks/lufthansa_comps_analysis.ipynb)
 
-At the valuation date, Lufthansa traded at approximately **€7.86 per share**. The median EV / EBITDA valuation based on the full peer group therefore implies approximately **17% downside**.
+## Run
 
-The significant valuation dispersion demonstrates the importance of peer selection when applying trading comparables to airlines.
+Python3.12 is recommended. From the project directory:
 
-## Valuation Overview
-
-The football field below summarizes the implied Lufthansa share-price ranges derived from EV / Revenue and EV / EBITDA trading multiples.
-
-![Lufthansa Football Field Valuation](outputs/football_field.png)
-
-The analysis shows the valuation dispersion across different trading multiples and highlights the current Lufthansa share price relative to the implied peer-based valuation range.
-
-## Methodology
-
-The analysis follows the standard trading comparables valuation framework:
-
-1. Select a relevant peer group
-2. Construct LTM Revenue and EBITDA
-3. Retrieve share prices as of the valuation date
-4. Calculate Equity Value
-5. Add Net Debt to derive Enterprise Value
-6. Calculate EV / Revenue and EV / EBITDA trading multiples
-7. Determine peer-group quartiles and median multiples
-8. Apply peer multiples to Lufthansa's LTM financials
-9. Convert implied Enterprise Value into Equity Value
-10. Derive an implied share price
-
-The project also performs a **peer-group sensitivity analysis** comparing network carriers, low-cost carriers and the full peer group.
-
-### Implied Share Price by Peer Group
-
-The chart below illustrates the sensitivity of Lufthansa's implied share price to the selected peer-group composition.
-
-![Lufthansa Peer Group Valuation](outputs/peer_group_valuation.png)
-
-The significant difference between network carriers and low-cost carriers demonstrates the importance of peer selection in a comparable companies analysis.
-
-## Key Features
-
-- LTM financial statement construction
-- Historical share-price retrieval
-- GBP / EUR currency normalization
-- Equity Value and Enterprise Value calculation
-- EV / Revenue and EV / EBITDA trading multiples
-- Peer median and quartile analysis
-- Implied share-price valuation
-- Football-field valuation visualization
-- Reproducible Python workflow
-- Business-model-based peer-group sensitivity analysis
-
-## Repository Structure
-
-```text
-lufthansa-trading-comps/
-│
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── notebooks/
-│   └── lufthansa_comps_analysis.ipynb
-│
-└── outputs/
-    ├── football_field.png
-    └── peer_group_valuation.png
+```sh
+python -m pip install -r requirements.txt
+python src/valuation.py
+python tests/test_valuation.py
 ```
 
-## Data Sources
+Open the notebook in JupyterLab and Run All. No network access is required for the valuation: prices and source inputs are frozen under `data/`. Running the valuation updates CSVs, chart and summary.json. To refresh the README, PDF and notebook's saved outputs from that same run, use `python src/build_deliverables.py`. The report builder uses reportlab; it does not require the local-only preparation scripts.
 
-Financial information is based on publicly available company annual and interim reports available as of the valuation date.
-Market data, including historical share prices and foreign-exchange rates, is retrieved programmatically using the yfinance Python package.
-The analysis covers:
-- Deutsche Lufthansa AG
-- Air France-KLM
-- International Airlines Group
-- easyJet
-- Ryanair
-- Wizz Air
+## Data and audit trail
 
-Financial periods differ across companies due to different fiscal year-ends. LTM figures are therefore constructed using the latest publicly available financial information available as of the valuation date.
+`data/ltm_bridges.csv` contains FY/interim components, period ends, report IDs, page locations and known disclosure differences. `data/net_debt_bridges.csv` reconciles debt and cash. `data/companies.csv` records share-count dates, sources and conventions. `data/source_registry.json` lists issuer reports and issuer-authored announcements. `data/market_snapshot.csv` and `data/market_raw/` preserve actual unadjusted closes and the provider response. Source links point to third-party publications; original reports are not bundled.
 
-## Limitations
+## Improvements from the original
 
-Trading comparables provide a relative, market-based valuation and should not be interpreted as an intrinsic valuation.
-Key limitations include differences in:
-- Business models and route networks
-- Fiscal year-ends
-- Profitability and cost structures
-- Accounting policies
-- Net debt definitions
-- Lease and pension treatment
-- Capital structures
+- Corrected IAG issued shares for disclosed treasury holdings.
+- Rebuilt Ryanair lease-inclusive net debt from the balance sheet instead of rounded net cash.
+- Used explicit company-reported Wizz Air rolling EBITDA; retained the unexplained EUR1.3m bridge difference in the audit trail.
+- Removed manual README results; all reported values now come from the same model output.
+- Added assertions against missing values, future dates, duplicate rows and broken LTM arithmetic.
+- Used consistent spot FX for GBP amounts; identified pence conversion explicitly.
+- Added leave-one-out, EBITDA/multiple, Ryanair exceptional-charge and expanded EV-bridge sensitivities.
 
-The analysis therefore uses EV / EBITDA as the primary valuation reference and evaluates the impact of different peer-group definitions.
+## Limits that remain
 
-## Technologies
+AF-KLM revenue uses a provisional bridge across original FY and IFRS18-restated interim comparatives. easyJet is deliberately lagged to H1 and has offer-related price risk. Some share counts are issued-share proxies or older disclosures, not exact-day outstanding counts. EBITDA definitions differ. The expanded EV-bridge scenario uses book proxies for selected pensions, minority interests and perpetuals; it is not a complete fair-value harmonization. These constraints matter and are explained in the methodology, not hidden behind a precise share price.
 
-- Python
-- pandas
-- NumPy
-- Matplotlib
-- yfinance
-- Jupyter Notebook
-
-## Disclaimer
-
-This project was created for educational and portfolio purposes only. It does not constitute investment advice or a recommendation to buy or sell any security.    
+The `original/` folder preserves the user's initial version for comparison. The revised case study was researched and developed collaboratively with AI assistance. The candidate should personally verify and understand all assumptions before using it as an interview work sample.
