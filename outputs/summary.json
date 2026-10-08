@@ -1,0 +1,86 @@
+{
+  "valuation_date": "2026-09-09",
+  "observed_price": 7.710000038146973,
+  "results": [
+    {
+      "group": "Network carriers",
+      "metric": "Revenue",
+      "n": 2,
+      "range_basis": "Observed min-max",
+      "low_multiple": 0.334363605398591,
+      "median_multiple": 0.5540387161415588,
+      "high_multiple": 0.7737138268845265,
+      "low": 5.842867057459612,
+      "median": 13.341824248209491,
+      "high": 20.84078143895937,
+      "change": 0.7304570923732545
+    },
+    {
+      "group": "Network carriers",
+      "metric": "EBITDA",
+      "n": 2,
+      "range_basis": "Observed min-max",
+      "low_multiple": 2.1945021026881006,
+      "median_multiple": 2.7870157186845956,
+      "high_multiple": 3.379529334681091,
+      "low": 1.7822851307002998,
+      "median": 3.7677096427377004,
+      "high": 5.753134154775104,
+      "change": -0.5113217089369516
+    },
+    {
+      "group": "All peers",
+      "metric": "Revenue",
+      "n": 5,
+      "range_basis": "Peer 25th-75th percentile",
+      "low_multiple": 0.43996039137189064,
+      "median_multiple": 0.7737138268845265,
+      "high_multiple": 1.1016503858317543,
+      "low": 9.447580285172872,
+      "median": 20.84078143895937,
+      "high": 32.03541431525489,
+      "change": 1.703084479357313
+    },
+    {
+      "group": "All peers",
+      "metric": "EBITDA",
+      "n": 5,
+      "range_basis": "Peer 25th-75th percentile",
+      "low_multiple": 3.379529334681091,
+      "median_multiple": 3.51634250537625,
+      "high_multiple": 5.46055979769861,
+      "low": 5.753134154775104,
+      "median": 6.211574628266826,
+      "high": 12.726356001538482,
+      "change": -0.19434830122780122
+    },
+    {
+      "group": "Low-cost carriers",
+      "metric": "Revenue",
+      "n": 3,
+      "range_basis": "Peer 25th-75th percentile",
+      "low_multiple": 0.7708053886018225,
+      "median_multiple": 1.1016503858317543,
+      "high_multiple": 1.2181623747565629,
+      "low": 20.74149730021388,
+      "median": 32.03541431525489,
+      "high": 36.012735251619695,
+      "change": 3.155047231744801
+    },
+    {
+      "group": "Low-cost carriers",
+      "metric": "EBITDA",
+      "n": 3,
+      "range_basis": "Peer 25th-75th percentile",
+      "low_multiple": 4.48845115153743,
+      "median_multiple": 5.46055979769861,
+      "high_multiple": 5.71702327035548,
+      "low": 9.468965314902652,
+      "median": 12.726356001538482,
+      "high": 13.585726742240913,
+      "change": 0.6506298234204866
+    }
+  ],
+  "status": "Educational reported-net-debt baseline; limitations in docs/METHODOLOGY.md",
+  "validations": "Finite inputs, positive denominators, LTM arithmetic, unique rows and source dates checked"
+}

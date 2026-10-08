@@ -1,0 +1,13 @@
+company,metric,fy,prior_comparable,current_comparable,calculated_ltm,reported_ltm,source_fy,source_interim,location,ltm_end,note
+Lufthansa,Revenue,39597,18449,19887,41035,,LH_FY,LH_H1,FY PDF p2; H1 PDF p2,2026-06-30,
+Lufthansa,EBITDA,4329,1344,1043,4028,,LH_FY,LH_H1,FY PDF p2; H1 PDF p2,2026-06-30,Adjusted EBITDA
+Air France-KLM,Revenue,33007,15608,16756,34155,,AF_FY,AF_H1,FY PDF p3; H1 PDF p17,2026-06-30,Approximate bridge: FY2025 originally reported; H1 comparative restated for IFRS18. Remaining FY basis reconciliation required.
+Air France-KLM,EBITDA,,,,,5204,AF_FY,AF_H1,FY PDF p3; H1 PDF p3,2026-06-30,Direct company-reported rolling adjusted EBITDA; no invented FY/interim bridge.
+IAG,Revenue,33213,15906,16064,33371,,IAG_FY,IAG_H1,FY PDF p2; H1 PDF p2,2026-06-30,
+IAG,EBITDA,7652,3135,3123,7640,7640,IAG_H1,IAG_H1,H1 PDF p48 rolling EBITDA; p7 H1 EBIT before exceptional items plus D&A,2026-06-30,EBITDA before exceptional items; FY reported in comparative column of H1 p48
+easyJet,Revenue,10106,3534,3954,10526,,EJ_FY,EJ_H1,FY PDF p5; H1 PDF p5,2026-03-31,Deliberate H1 observation; newer Q3 trading update exists. Not latest-period synchronized.
+easyJet,EBITDA,1446,-5,-134,1317,,EJ_FY,EJ_H1,FY PDF p5; H1 PDF p5,2026-03-31,Headline EBITDA; deliberately lagged H1 observation
+Ryanair,Revenue,15544.3,4337.6,4384.1,15590.8,,RY_FY,RY_Q1,FY PDF p5; Q1 PDF p5,2026-06-30,
+Ryanair,EBITDA,3747.6,1256.6,992.5,3483.5,,RY_FY,RY_Q1,FY PDF p5; Q1 PDF p5,2026-06-30,Reported operating profit plus depreciation; includes EUR85m exceptional FY charge. Alternative add-back shown.
+Wizz Air,Revenue,5691.4,1428.2,1507.4,5770.6,,WZ_FY,WZ_Q1,FY PDF p1; Q1 PDF p1,2026-06-30,
+Wizz Air,EBITDA,1318.3,300.2,147.4,1165.5,1164.2,WZ_FY,WZ_Q1,FY PDF p1; Q1 PDF p1 and p12 rolling EBITDA,2026-06-30,"Use explicit rolling EBITDA in Q1 p12; FY-minus-prior-Q1 bridge gives 1165.5. EUR1.3m disclosure difference retained and flagged, not silently reconciled."

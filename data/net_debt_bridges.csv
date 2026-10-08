@@ -1,0 +1,7 @@
+company,calculation,calculated,used,source,location,note
+Lufthansa,14840 - 1799 - 6345,6696,6697,LH_H1,PDF p14,EUR1m rounding residual; reported total used; leases3985 already included.
+Air France-KLM,8848+6525-82-79-81+12 - (5091+733+944-1),8376,8376,AF_H1,PDF p24,Company definition; excludes parent perpetuals1268 and NCI2136.
+IAG,13867-8747-428,4692,4692,IAG_H1,PDF p48,Borrowings include leases; no pension-surplus deduction in baseline.
+easyJet,2017+995-3446,-434,-434,EJ_H1,PDF p15,Leases995 included; negative debt means net cash.
+Ryanair,38.3+39.8+103.8-2483.8-319.7,-2621.6,-2621.6,RY_Q1,PDF p4,Lease-inclusive analyst definition; restricted cash31.2 excluded.
+Wizz Air,7177.9+25.5+60.9+0.5-78.9-1849.2-202.2,5134.5,5134.5,WZ_Q1,PDF p13,Includes convertibles and lease/aircraft financing; restricted cash excluded.

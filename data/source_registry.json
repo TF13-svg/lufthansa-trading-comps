@@ -1,0 +1,97 @@
+{
+  "LH_FY": {
+    "title": "Lufthansa Annual Report 2025",
+    "publication_date": "2026-03-06",
+    "url": "https://investor-relations.lufthansagroup.com/fileadmin/downloads/en/financial-reports/annual-reports/LH-AR-2025-e.pdf"
+  },
+  "LH_H1": {
+    "title": "Lufthansa H1 2026",
+    "publication_date": "2026-08-04",
+    "url": "https://investor-relations.lufthansagroup.com/fileadmin/downloads/en/financial-reports/interims-reports/LH-QR-2026-2-e.pdf"
+  },
+  "AF_FY": {
+    "title": "Air France-KLM FY2025 results",
+    "publication_date": "2026-02-19",
+    "url": "https://ml-eu.globenewswire.com/Resource/Download/e17bb9bc-e339-4547-8466-d616af4326df"
+  },
+  "AF_H1": {
+    "title": "Air France-KLM Q2 2026 results",
+    "publication_date": "2026-07-30",
+    "url": "https://www.globenewswire.com/news-release/2026/07/30/3335784/0/en/Air-France-KLM-Q2-2026-Results.html"
+  },
+  "IAG_FY": {
+    "title": "IAG FY2025 results",
+    "publication_date": "2026-02-27",
+    "url": "https://www.iairgroup.com/media/wd4dsjef/full-year-results-release-for-the-year-to-31-december-2025.pdf"
+  },
+  "IAG_H1": {
+    "title": "IAG H1 2026 report",
+    "publication_date": "2026-07-31",
+    "url": "https://www.iairgroup.com/media/objplbgt/interim-management-report-for-the-six-months-to-30-june-2026.pdf"
+  },
+  "EJ_FY": {
+    "title": "easyJet FY2025 results",
+    "publication_date": "2025-11-25",
+    "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2025/q4/FY25-RNS.pdf"
+  },
+  "EJ_H1": {
+    "title": "easyJet H1 FY2026 results",
+    "publication_date": "2026-05-21",
+    "url": "https://s203.q4cdn.com/522538739/files/doc_financials/2026/q2/1-HY26-Combined-RNS-FINAL.pdf"
+  },
+  "RY_FY": {
+    "title": "Ryanair FY2026 results",
+    "publication_date": "2026-05-18",
+    "url": "https://investor.ryanair.com/wp-content/uploads/2026/05/FY26-Ryanair-Results.pdf"
+  },
+  "RY_Q1": {
+    "title": "Ryanair Q1 FY2027 results",
+    "publication_date": "2026-07-20",
+    "url": "https://investor.ryanair.com/wp-content/uploads/2026/07/Q1-FY27-Ryanair-Results.pdf"
+  },
+  "WZ_FY": {
+    "title": "Wizz Air FY2026 results",
+    "publication_date": "2026-06-11",
+    "url": "https://api.mziq.com/mzfilemanager/v2/d/f33cff8c-9600-4e77-8b65-b797eb10bc4e/01bd0d3f-bc5e-abec-a263-4a801099419f?origin=2"
+  },
+  "WZ_Q1": {
+    "title": "Wizz Air Q1 FY2027 results",
+    "publication_date": "2026-08-06",
+    "url": "https://api.mziq.com/mzfilemanager/v2/d/f33cff8c-9600-4e77-8b65-b797eb10bc4e/95382e43-9ba3-0f91-5feb-f8215fd634fe?origin=2"
+  },
+  "LH_SH": {
+    "title": "Lufthansa issued capital announcement",
+    "publication_date": "2026-05-20",
+    "url": "https://investor-relations.lufthansagroup.com/en/share-bonds/basic-data/issued-capital.html"
+  },
+  "AF_SH": {
+    "title": "Air France-KLM August share count",
+    "publication_date": "2026-09-02",
+    "url": "https://www.globenewswire.com/news-release/2026/09/02/3355362/0/en/declaration-of-number-of-voting-rights.html"
+  },
+  "IAG_SH": {
+    "title": "IAG buyback and treasury disclosure",
+    "publication_date": "2026-09-07",
+    "url": "https://www.investegate.co.uk/announcement/rns/international-consolidated-airlines-group-sa-cdi---iag/transaction-in-own-shares/9759578"
+  },
+  "EJ_SH": {
+    "title": "easyJet AGM voting results",
+    "publication_date": "2026-02-12",
+    "url": "https://s203.q4cdn.com/522538739/files/doc_downloads/2026/02/260212-Result-of-AGM-February-2026.pdf"
+  },
+  "RY_SH": {
+    "title": "Ryanair August voting rights",
+    "publication_date": "2026-09-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1038683/000165495426008006/a9166s.htm"
+  },
+  "WZ_SH": {
+    "title": "Wizz Air August share capital disclosure",
+    "publication_date": "2026-09-02",
+    "url": "https://uk.advfn.com/stock-market/london/wizz-air-WIZZ/share-news/Wizz-Air-Holdings-PLC-Wizz-Air-Share-Capital/99233025"
+  },
+  "EJ_OFFER": {
+    "title": "easyJet possible offers (pre-cutoff announcements only)",
+    "publication_date": "2026-07-10",
+    "url": "https://corporate.easyjet.com/investors/possible-offer-from-castlelake/default.aspx"
+  }
+}

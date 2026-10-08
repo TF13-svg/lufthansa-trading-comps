@@ -1,0 +1,8 @@
+ticker,date,close,currency,source_url,retrieved_at_utc,price_basis
+LHA.DE,2026-09-09,7.710000038146973,EUR,https://query1.finance.yahoo.com/v8/finance/chart/LHA.DE?period1=1788912000&period2=1788998400&interval=1d,2026-10-08T14:59:30.794040+00:00,Unadjusted quote.close; not adjclose
+AF.PA,2026-09-09,11.585000038146973,EUR,https://query1.finance.yahoo.com/v8/finance/chart/AF.PA?period1=1788912000&period2=1788998400&interval=1d,2026-10-08T14:59:30.760068+00:00,Unadjusted quote.close; not adjclose
+IAG.L,2026-09-09,415.1000061035156,GBp,https://query1.finance.yahoo.com/v8/finance/chart/IAG.L?period1=1788912000&period2=1788998400&interval=1d,2026-10-08T14:59:30.772730+00:00,Unadjusted quote.close; not adjclose
+EZJ.L,2026-09-09,668.2000122070312,GBp,https://query1.finance.yahoo.com/v8/finance/chart/EZJ.L?period1=1788912000&period2=1788998400&interval=1d,2026-10-08T14:59:30.753796+00:00,Unadjusted quote.close; not adjclose
+RYA.IR,2026-09-09,22.600000381469727,EUR,https://query1.finance.yahoo.com/v8/finance/chart/RYA.IR?period1=1788912000&period2=1788998400&interval=1d,2026-10-08T14:59:30.941269+00:00,Unadjusted quote.close; not adjclose
+WIZZ.L,2026-09-09,1014.0,GBp,https://query1.finance.yahoo.com/v8/finance/chart/WIZZ.L?period1=1788912000&period2=1788998400&interval=1d,2026-10-08T14:59:30.937963+00:00,Unadjusted quote.close; not adjclose
+GBPEUR=X,2026-09-09,1.1647000312805176,EUR,https://query1.finance.yahoo.com/v8/finance/chart/GBPEUR=X?period1=1788912000&period2=1788998400&interval=1d,2026-10-08T14:59:30.941269+00:00,Unadjusted quote.close; not adjclose

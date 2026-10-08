@@ -1,0 +1,7 @@
+company,ticker,financial_currency,net_debt,shares_m,financial_date,share_count_date,financial_source,share_source,ebitda_definition,note
+Lufthansa,LHA.DE,EUR,6697,1202.082895,2026-06-30,2026-05-19,LH_H1,LH_SH,Adjusted,Net debt includes leases. Issued shares used as disclosed proxy; target pension and minority sensitivity separate.
+Air France-KLM,AF.PA,EUR,8376,262.769869,2026-06-30,2026-08-31,AF_H1,AF_SH,Adjusted,Issued shares proxy; exact treasury count not reconciled. Baseline excludes EUR2136m NCI and EUR1268m parent perpetuals; alternative bridge includes book proxies.
+IAG,IAG.L,EUR,4692,4370.019991,2026-06-30,2026-09-04,IAG_H1,IAG_SH,Before exceptional items,4611.669527m issued less 241.649536m treasury. Uses latest located public disclosure before valuation; not exact September 9 count.
+easyJet,EZJ.L,GBP,-434,758.010025,2026-03-31,2026-02-10,EJ_H1,EJ_SH,Headline,Net cash includes lease debt; old issued share disclosure proxy. H1 period deliberately retained; Q3 update and takeover-related trading may reduce comparability.
+Ryanair,RYA.IR,EUR,-2621.6,1036.736313,2026-06-30,2026-08-31,RY_Q1,RY_SH,Reported EBIT + depreciation,"Debt and leases less cash and term deposits, excludes restricted cash. Replaces rounded original -2700 with -2621.6."
+Wizz Air,WIZZ.L,EUR,5134.5,103.529016,2026-06-30,2026-08-31,WZ_Q1,WZ_SH,Company-reported EBITDA,Direct rolling EBITDA1164.2 used. Basic shares only; convertible debt remains in debt. Fully diluted shares cannot be substituted without adjusting debt.
